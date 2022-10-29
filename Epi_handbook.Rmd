@@ -1,0 +1,73 @@
+---
+title: "Study Epi Handbook"
+author: "中村 星斗"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    toc: yes
+    toc_float: yes
+    number_section: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+```{r}
+pacman::p_load(tidyverse)
+
+```
+
+
+# 目的
+
+疫学、公衆衛生学のデータ分析を一通りRでできるようになること。そのために、疫学ハンドブックを学習する。
+
+# 本書について
+
+## 編集前期・技術注記
+
+## ハンドブックとデータのダウンロード
+
+```{r}
+# 最新版の Epi R Handbook パッケージをインストールする
+pacman::p_install_gh("appliedepi/epirhandbook")
+```
+
+パッケージの読み込み
+
+```{r}
+pacman::p_load(epirhandbook)
+```
+
+ハンドブックのダウンロード
+
+```{r}
+download_book()
+```
+
+### サンプルデータのダウンロード
+
+```{r, eval = FALSE}
+get_data("all")
+```
+
+# 基本編
+
+## R の基礎
+
+なし
+
+### Excel・Stata・SASとの比較
+
+なし
+
+### 推奨パッケージ
+
+なし
+
+### R プロジェクト
+
+なし
+
+### データのインポート・エクスポート
